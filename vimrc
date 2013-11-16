@@ -121,3 +121,12 @@ if filereadable(expand("~/.vimrc.local"))
   " noremap! jj <ESC>
   source ~/.vimrc.local
 endif
+
+" to turn off the "No write since last change (add ! to override) " warning
+set hidden
+
+" below are the files added by self mainly some abbrevations
+ab python123  #!/usr/bin/env python2.7<CR>import sys<CR>import pdb<CR>import argparse<CR>if __name__ == '__main__':<CR>o = sys.stdout<CR>e = sys.stderr<CR>parser= argparse.ArgumentParser(description="")<CR>parser.add_argument("--file", help="")<CR>args = parser.parse_args()
+ab pycom  """<CR><CR>Parameters<CR>===========<CR>Return<CR>==========<CR><CR>"""
+
+ab C123  #include<iostream><CR>using std::cin;<CR>using std::cout;<CR>using std::endl;<CR>int main(int argc, char * argv[]){}
